@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary Colors */
+  --color-primary: #28574e;;
+  --color-primary-dark: #20433d;
+  --color-primary-darker: #1e232f;
+  --color-secondary: #244841;
+
+  /* Background Colors */
+  --color-bg-cream: #dad2c7;
+  --color-bg-light: #f8f8f8;
+  --color-bg-white: #ffffff;
+
+  /* Text Colors */
+  --color-text-primary: #000000;
+  --color-text-secondary: #757575;
+  --color-text-muted: #969696;
+  --color-text-white: #ffffff;
+
+  /* Border Colors */
+  --color-border: #d3d3d3;
+
+  /* Fonts */
+  --font-outfit: "Outfit", sans-serif;
+  --font-adamina: "Adamina", serif;
+  --font-recoleta: "Recoleta", serif;
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-primary-darker: var(--color-primary-darker);
+  --color-secondary: var(--color-secondary);
+  --color-bg-cream: var(--color-bg-cream);
+  --color-bg-light: var(--color-bg-light);
+  --color-bg-white: var(--color-bg-white);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-white: var(--color-text-white);
+  --color-border: var(--color-border);
+  --font-sans: var(--font-outfit);
+  --font-heading: var(--font-adamina);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg-cream);
+  color: var(--color-text-primary);
+  font-family: var(--font-outfit);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Utilities */
+.font-heading {
+  font-family: var(--font-adamina);
+}
+
+.font-body {
+  font-family: var(--font-outfit);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
