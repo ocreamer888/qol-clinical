@@ -2,8 +2,6 @@ import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Features } from "@/components/sections/Features";
 import { CTABanner } from "@/components/sections/CTABanner";
-import { Partners } from "@/components/sections/Partners";
-import { Membership } from "@/components/sections/Membership";
 import { Treatments } from "@/components/sections/Treatments";
 import { Doctors } from "@/components/sections/Doctors";
 import { ContactForm } from "@/components/sections/ContactForm";
@@ -22,6 +20,7 @@ export default function Home() {
       <Treatments />
       <Doctors />
       <CTAsection />
+      <ContactForm />
       <Footer />
     </main>
   );

@@ -7,15 +7,15 @@ const membershipPlans = [
     id: "lite",
     name: "QOL Lite",
     price: "$10",
-    period: "/Month",
+    period: "/mes",
     label: "Desde",
     features: [
-      "Global Health Coverage IN 50L-3Cr",
-      "USA Health Advisor",
-      "Discounted USA Medication",
-      "Visa Assistance",
-      "Preventative Genetic Screening",
-      "Global Concierge Service",
+      "Cobertura de salud global en más de 50 países",
+      "Asesor de salud en EE.UU.",
+      "Medicamentos a precio preferencial",
+      "Asistencia con visas médicas",
+      "Tamizaje genético preventivo",
+      "Servicio de concierge global",
     ],
     gradient: "from-white/20 to-transparent",
     gradientPosition: "left",
@@ -24,15 +24,15 @@ const membershipPlans = [
     id: "family",
     name: "QOL Family",
     price: "$45",
-    period: "/Month",
+    period: "/mes",
     label: "Desde",
     features: [
-      "Global Health Coverage IN 50L-3Cr",
-      "USA Health Advisor",
-      "Discounted USA Medication",
-      "Visa Assistance",
-      "Preventative Genetic Screening",
-      "Global Concierge Service",
+      "Cobertura de salud global en más de 50 países",
+      "Asesor de salud en EE.UU.",
+      "Medicamentos a precio preferencial",
+      "Asistencia con visas médicas",
+      "Tamizaje genético preventivo",
+      "Servicio de concierge global",
     ],
     gradient: "from-white/20 to-transparent",
     gradientPosition: "right",
@@ -94,7 +94,7 @@ export function Membership() {
 
               {/* CTA Button */}
               <Button variant="white" size="sm" className="w-fit">
-                Get Started
+                Comenzar
               </Button>
             </div>
           ))}

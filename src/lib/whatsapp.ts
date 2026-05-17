@@ -50,3 +50,21 @@ export function waFeatureConsulta(featureTitle: string): string {
     `Me interesa la opción de «${topic}». ¿Me pueden contar cómo funciona y qué necesito para empezar?`
   );
 }
+
+export function waContactForm(
+  nombre: string,
+  apellido: string,
+  email: string,
+  telefono: string,
+  pais: string,
+  mensaje: string
+): string {
+  return (
+    `Hola, vengo desde ${ORIGIN}.\n` +
+    `Nombre: ${nombre} ${apellido}\n` +
+    `Email: ${email}\n` +
+    `Teléfono: ${telefono}\n` +
+    `País: ${pais}\n` +
+    `Mensaje: ${mensaje}`
+  );
+}

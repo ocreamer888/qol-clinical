@@ -91,8 +91,8 @@ export function Footer() {
           <div className="flex items-center gap-3">
           <span className="text-white font-medium text-2xl">
             <Image
-                  src="/logos/group 8.svg"
-                  alt= "jaje"
+                  src="/logos/Group 8.svg"
+                  alt="QOL Clinical"
                   width={150}
                   height={150}
                   className="object-contain"
@@ -131,7 +131,7 @@ export function Footer() {
             */}
           {/* Copyright */}
           <p className="text-white text-base">
-            © 2016 QOL. Derechos Reservados.
+            © {new Date().getFullYear()} QOL Clinical. Derechos Reservados.
           </p>
         </div>
       </div>

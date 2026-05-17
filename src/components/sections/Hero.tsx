@@ -8,8 +8,9 @@ export function Hero() {
   return (
     <section className="relative min-h-[1200px] overflow-hidden">
       {/* Hero Content */}
-      <div className="relative z-10 w-full mx-auto bg-[#28574e] h-[85vh] rounded-b-3xl px-8 lg:px-12 pt-44 pb-16">
+      <div className="absolute inset-0 w-full mx-auto bg-[#28574e] h-[55%] rounded-b-3xl px-8 lg:px-12 pt-44 pb-16">
         {/* Main Headline */}
+        <div className="relative z-10 w-full mx-auto">
         <h1 className="font-[family-name:var(--font-adamina)] text-white text-center text-4xl md:text-5xl lg:text-[48px] leading-tight max-w-[750px] mx-auto mb-2">
           Vivir con una condición crónica no significa vivir sin apoyo.
         </h1>
@@ -61,6 +62,7 @@ export function Hero() {
             <p className="text-white text-lg lg:text-[22px] leading-tight text-center">
               Acompañamiento 24/7
             </p>
+          </div>
           </div>
         </div>
       </div>

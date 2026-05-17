@@ -11,36 +11,29 @@ export function NavBar() {
         <div className="flex items-center gap-3">
           <span className="text-white font-medium text-2xl">
             <Image
-                  src="/logos/group 8.svg"
-                  alt= "jaje"
+                  src="/logos/Group 8.svg"
+                  alt="QOL Clinical"
                   width={150}
                   height={150}
                   className="object-contain"
                 /></span>
         </div>
 
-        {/* Nav Links
+        {/* Nav Links */}
         <div className="hidden lg:flex items-center gap-6">
-          <a href="#features" className="text-white/90 hover:text-white text-sm font-medium transition-colors">
-            Second Opinion
+          <a href="#about" className="text-white/90 hover:text-white text-sm font-medium transition-colors">
+            Nosotros
           </a>
           <a href="#treatments" className="text-white/90 hover:text-white text-sm font-medium transition-colors">
-            Medical Travel
-          </a>
-          <a href="#membership" className="text-white/90 hover:text-white text-sm font-medium transition-colors">
-            Clinical Trials
+            Tratamientos
           </a>
           <a href="#doctors" className="text-white/90 hover:text-white text-sm font-medium transition-colors">
-            Membership Goal
+            Equipo
           </a>
           <a href="#contact" className="text-white/90 hover:text-white text-sm font-medium transition-colors">
-            Testimonials
-          </a>
-          <a href="#" className="text-white/90 hover:text-white text-sm font-medium transition-colors">
-            Login
+            Contacto
           </a>
         </div>
-        */}
 
         <div className="flex flex-wrap items-center justify-end gap-2">
           <WhatsAppButton
