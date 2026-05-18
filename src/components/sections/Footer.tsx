@@ -16,7 +16,7 @@ const footerLinks = {
     offices: [
       { country: "CR", location: "San José, Costa Rica", label: "Oficinas en Costa Rica" },
     ],
-    email: "jchavarria@lifehubcr.com",
+    email: "jchavarria@qolclinical.com",
   },
   legal: {
     title: "Legal",
