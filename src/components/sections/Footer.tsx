@@ -96,6 +96,7 @@ export function Footer() {
                   width={150}
                   height={150}
                   className="object-contain"
+                  unoptimized
                 /></span>
           </div>
 

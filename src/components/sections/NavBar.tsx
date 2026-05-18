@@ -16,6 +16,7 @@ export function NavBar() {
                   width={150}
                   height={150}
                   className="object-contain"
+                  unoptimized
                 /></span>
         </div>
 
