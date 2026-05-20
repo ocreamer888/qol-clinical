@@ -32,6 +32,6 @@ export type Treatment = {
       name: "Dr. Javier León",
       specialty: "Director Clínico",
       image: "/photos/dr-javier-leon.png",
-      description: "Farmaceútico con sólida experiencia...",
+      description: "Farmaceútico con sólida experiencia en gestión operativa enfocado en el sector salud y tecnología, logística de suministros, mejora de la experiencia del paciente, y operaciones de centros de servicios compartidos. Con experiencia clínica y comercial, marketing, optimización de recursos, procesos y gestión de talento. He desempeñado roles en contextos industriales y clínicos a nivel regional, con un enfoque multicultural. Todo ello orientado a la excelencia en el seguimiento farmacoterapéutico.",
     },
   ];
