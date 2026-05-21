@@ -78,7 +78,7 @@ export function ContactForm() {
 
   return (
     <section id="contact" className="bg-[#f8f8f8] py-20 lg:py-28">
-      <div className="flex justify-center items-center max-w-[1237px] mx-auto px-8 lg:px-12">
+      <div className="flex justify-center items-center max-w-[1237px] mx-auto px-2 lg:px-12">
         <div className="relative z-10 p-8 lg:p-16 max-w-[700px] w-full bg-[#dad2c7] rounded-[40px]">
           <h2 className="font-[family-name:var(--font-adamina)] text-[#28574e] text-3xl md:text-4xl mb-10">
             Agenda Consulta Gratis
