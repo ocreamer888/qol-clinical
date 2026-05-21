@@ -24,7 +24,7 @@ export const CTAsection = () => {
             Consulta Gratis
           </WhatsAppButton>
         </div>
-        <div className="relative flex flex-col flex-1 items-center justify-center z-10 w-full bg-[#28574e]= pt-16 rounded-[40px]">
+        <div className="relative flex flex-col flex-1 items-center justify-center z-10 w-full pt-16 rounded-[40px]">
             <Image src="/photos/dr-javier-leon-qol-clinical-2.png" 
             alt="CTA Section" 
             width={1000} 
