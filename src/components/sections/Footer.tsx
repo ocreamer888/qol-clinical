@@ -33,7 +33,7 @@ export function Footer() {
     <footer className="bg-[#f8f8f8]">
       <div className="w-full bg-[#28574e] py-16 rounded-t-[40px] mx-auto px-8 lg:px-12">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-12 pb-12 border-b border-white/20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 pb-12 border-b border-white/20">
           {/* About Column */}
           <div>
             <h3 className="text-white font-bold text-xl mb-6">{footerLinks.about.title}</h3>
@@ -91,11 +91,11 @@ export function Footer() {
           <div className="flex items-center gap-3">
           <span className="text-white font-medium text-2xl">
             <Image
-                  src="/logos/Group 8.svg"
+                  src="/logos/qol-logo.svg"
                   alt="QOL Clinical"
                   width={150}
                   height={150}
-                  className="object-contain"
+                  className="object-contain w-auto h-auto"
                   unoptimized
                 /></span>
           </div>

@@ -6,9 +6,9 @@ import { WhatsAppButton } from "../WhatsAppButton";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[1200px] overflow-hidden">
+    <section className="relative min-h-[1300px] overflow-hidden">
       {/* Hero Content */}
-      <div className="absolute inset-0 w-full mx-auto bg-[#28574e] h-[55%] rounded-b-3xl px-8 lg:px-12 pt-44 pb-16">
+      <div className="absolute inset-0 w-full mx-auto bg-[#28574e] flex-1 h-[55%] rounded-b-3xl px-8 lg:px-12 pt-44 pb-16">
         {/* Main Headline */}
         <div className="relative z-10 w-full mx-auto">
         <h1 className="font-[family-name:var(--font-adamina)] text-white text-center text-4xl md:text-5xl lg:text-[48px] leading-tight max-w-[750px] mx-auto mb-2">
@@ -25,7 +25,7 @@ export function Hero() {
         <div className="mx-auto mb-4 flex w-full max-w-[376px] flex-col items-stretch gap-2">
           <WhatsAppButton
             message={waHablaEspecialista()}
-            className="flex h-[56px] w-full items-center justify-center rounded-[62px] bg-white text-[15px] text-[#28574e] hover:bg-white/80"
+            className="flex h-[56px] w-full items-center justify-center rounded-[62px] bg-white text-[15px] text-purple-800 hover:bg-white/80"
           >
             Habla con un especialista ahora
           </WhatsAppButton>

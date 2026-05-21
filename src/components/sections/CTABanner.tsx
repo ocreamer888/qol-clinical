@@ -7,7 +7,7 @@ import { WhatsAppButton } from "../WhatsAppButton";
 export function CTABanner() {
   return (
     <section className="bg-[#dad2c7] pb-20 md:py-32 lg:py-28">
-      <div className="max-w-[1250px] mx-auto px-8 lg:px-12">
+      <div className="max-w-[1250px] mx-auto px-2 lg:px-12">
         {/* Main container - no overflow-hidden so image can extend above */}
         <div className="relative flex flex-col justify-start md:justify-center items-start md:min-h-[200px] min-h-[420px] bg-[#1e232f] rounded-[40px]">
 

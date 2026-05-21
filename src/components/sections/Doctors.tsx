@@ -7,7 +7,7 @@ import { doctors } from "@/lib/scripts";
 export function Doctors() {
   return (
     <section id="doctors" className="bg-[#f8f8f8] py-20 lg:py-28 rounded-t-[40px]">
-      <div className="max-w-[1237px] mx-auto px-8 lg:px-12">
+      <div className="max-w-[1237px] mx-auto px-2 lg:px-12">
         <h2 className="font-[family-name:var(--font-adamina)] text-[#28574e] text-3xl md:text-4xl lg:text-[40px] text-center mb-16">
           Conoce a Nuestro Director Clínico
         </h2>
@@ -35,7 +35,7 @@ export function Doctors() {
               </div>
 
               {/* Description */}
-              <p className="text-black text-center md:text-start text-xl lg:text-2xl leading-relaxed">
+              <p className="text-start text-md px-2 lg:text-xl leading-relaxed text-balance">
                 {doctor.description}
               </p>
             </Fragment>

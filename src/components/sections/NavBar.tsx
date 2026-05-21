@@ -11,11 +11,11 @@ export function NavBar() {
         <div className="flex items-center gap-3">
           <span className="text-white font-medium text-2xl">
             <Image
-                  src="/logos/Group 8.svg"
+                  src="/logos/qol-logo.svg"
                   alt="QOL Clinical"
                   width={150}
                   height={150}
-                  className="object-contain"
+                  className="object-contain w-auto h-auto"
                   unoptimized
                 /></span>
         </div>

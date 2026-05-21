@@ -1,7 +1,7 @@
 
 export function About() {
   return (
-    <section id="about" className="py-20 lg:py-28">
+    <section id="about" className="pb-20 -mt-80 md:-mt-20 lg:-mt-0 lg:pb-28">
       <div className="max-w-[1252px] mx-auto px-8 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Left Column - Headline */}
