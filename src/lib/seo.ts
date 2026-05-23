@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "QOL Clinical",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.qolclinical.com",
-  title: "QOL Clinical | Clínica Integral en Costa Rica",
+  title: "QOL Clinical | Acompañamiento Clínico Integral en Costa Rica",
   description:
     "Teleconsulta y seguimiento clínico para condiciones crónicas en Costa Rica. Tu equipo construye contigo un plan de salud claro y sostenible.",
   keywords: [
