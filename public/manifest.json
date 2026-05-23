@@ -1,0 +1,17 @@
+{
+  "name": "QOL Clinical",
+  "short_name": "QOL",
+  "description": "Acompañamiento clínico integral para condiciones crónicas y agudas",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#28574E",
+  "background_color": "#ffffff",
+  "lang": "es-CR",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
