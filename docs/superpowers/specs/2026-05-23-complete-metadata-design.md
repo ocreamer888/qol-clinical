@@ -2,7 +2,7 @@
 
 **Date:** 2026-05-23  
 **Status:** Approved  
-**Site:** https://qolclinical.com  
+**Site:** https://www.qolclinical.com  
 **Locale:** es_CR (Costa Rica)
 
 ---
@@ -34,7 +34,7 @@ public/robots.txt                            ← already exists (no changes)
 Central config object exported as `siteConfig`. Contains:
 
 - `name`: "QOL Clinical"
-- `url`: `process.env.NEXT_PUBLIC_SITE_URL ?? "https://qolclinical.com"`
+- `url`: `process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.qolclinical.com"`
 - `title`: "QOL Clinical — Acompañamiento clínico integral"
 - `description`: Full Spanish description of services
 - `keywords`: Array of Spanish SEO keywords (condiciones crónicas, teleconsulta, etc.)
@@ -104,8 +104,8 @@ Server component that renders a `<script type="application/ld+json">` in `<head>
 {
   "@type": "MedicalOrganization",
   "name": "QOL Clinical",
-  "url": "https://qolclinical.com",
-  "logo": "https://qolclinical.com/logos/qol-logo.svg",
+  "url": "https://www.qolclinical.com",
+  "logo": "https://www.qolclinical.com/logos/qol-logo.svg",
   "telephone": "+50686036047",
   "description": "...",
   "medicalSpecialty": ["Chronic disease management", "Teleconsultation", ...],
@@ -135,10 +135,10 @@ Server component that renders a `<script type="application/ld+json">` in `<head>
 {
   "@type": "WebSite",
   "name": "QOL Clinical",
-  "url": "https://qolclinical.com",
+  "url": "https://www.qolclinical.com",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://qolclinical.com/?q={search_term_string}",
+    "target": "https://www.qolclinical.com/?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 }
@@ -151,7 +151,7 @@ Server component that renders a `<script type="application/ld+json">` in `<head>
   "name": "Dr. Javier León",
   "jobTitle": "Director Médico",
   "worksFor": { "@type": "MedicalOrganization", "name": "QOL Clinical" },
-  "url": "https://qolclinical.com"
+  "url": "https://www.qolclinical.com"
 }
 ```
 
@@ -198,7 +198,7 @@ Especializado en acompañamiento farmacéutico y clínico para condiciones crón
 
 ## Contacto
 - Teléfono/WhatsApp: +506 8603-6047
-- Web: https://qolclinical.com
+- Web: https://www.qolclinical.com
 
 ## Equipo
 - Dr. Javier León — Director Médico
@@ -220,6 +220,12 @@ revisamos tus tratamientos y construimos contigo un plan jerárquico, claro y so
 | Create | `src/components/JsonLd.tsx` |
 | Update | `lib/seo.ts` (new file) |
 | Update | `src/app/layout.tsx` |
+
+---
+
+## Environment Variable Update
+
+`NEXT_PUBLIC_SITE_URL` in `.env` must change from `https://qolclinical.com` to `https://www.qolclinical.com`. The non-www version should 301-redirect to www (configured at the hosting/DNS level, outside this codebase).
 
 ---
 
