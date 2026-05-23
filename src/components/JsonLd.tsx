@@ -49,11 +49,6 @@ export function JsonLd() {
       "@id": `${siteConfig.url}/#website`,
       name: siteConfig.name,
       url: siteConfig.url,
-      potentialAction: {
-        "@type": "SearchAction",
-        target: `${siteConfig.url}/?q={search_term_string}`,
-        "query-input": "required name=search_term_string",
-      },
     },
     {
       "@type": "Person",
