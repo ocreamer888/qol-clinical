@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Outfit, Adamina } from "next/font/google";
 import "./globals.css";
+import { JsonLd } from "@/components/JsonLd";
+import { siteConfig } from "@/lib/seo";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -14,25 +16,62 @@ const adamina = Adamina({
   weight: ["400"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://qolclinical.com";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
-  title: "QOL Clinical - Atención clínica integral",
-  description: "QOL Clinical es un centro clínico integral especializado en el manejo de condiciones crónicas. Teleconsulta personalizada, seguimiento real, plan de salud diseñado para ti.",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  keywords: [...siteConfig.keywords],
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
+  category: "health",
+  creator: siteConfig.name,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: siteConfig.url,
+    languages: { "es-CR": siteConfig.url },
+  },
   openGraph: {
-    title: "QOL Clinical - Atención clínica integral",
-    description: "Teleconsulta personalizada, seguimiento real, plan de salud diseñado para ti.",
-    url: siteUrl,
-    siteName: "QOL Clinical",
-    locale: "es_CR",
     type: "website",
+    title: siteConfig.title,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    locale: siteConfig.locale,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.name} — Acompañamiento clínico integral`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "QOL Clinical - Atención clínica integral",
-    description: "Teleconsulta personalizada, seguimiento real, plan de salud diseñado para ti.",
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
   },
+  verification: {
+    google: siteConfig.googleVerification,
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({
@@ -42,9 +81,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body
-        className={`${outfit.variable} ${adamina.variable} antialiased`}
-      >
+      <body className={`${outfit.variable} ${adamina.variable} antialiased`}>
+        <JsonLd />
         {children}
       </body>
     </html>
