@@ -35,7 +35,7 @@ export const siteConfig = {
   },
   locale: "es_CR",
   themeColor: "#28574E",
-  ogImage: "/qol-social.png",
+  ogImage: "/qol-clinical-social.png",
   googleVerification: "google034f4af09b834679",
   doctor: {
     name: "Dr. Javier León",
